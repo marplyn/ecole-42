@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dground <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: dground <dground@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/04 14:34:47 by dground           #+#    #+#             */
-/*   Updated: 2021/10/04 14:39:20 by dground          ###   ########.fr       */
+/*   Created: 2021/10/05 13:04:17 by dground           #+#    #+#             */
+/*   Updated: 2021/10/06 21:36:13 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

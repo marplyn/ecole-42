@@ -1,21 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dground <dground@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/05 13:04:17 by dground           #+#    #+#             */
-/*   Updated: 2021/10/06 21:36:29 by dground          ###   ########.fr       */
+/*   Created: 2021/10/05 20:27:03 by dground           #+#    #+#             */
+/*   Updated: 2021/10/07 21:58:48 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	else
-		return (0);
+	unsigned char	*tmp;
+
+	tmp = (unsigned char *)dst;
+	if (dst != 0 || src != 0)
+	{
+		if (src < dst)
+		{
+			while (len--)
+				*((unsigned char *)(dst + len)) = *((unsigned char *)(src
+							+ len));
+		}
+		else
+		{
+			while (len--)
+				*(unsigned char *)dst++ = *(unsigned char *)src++;
+		}
+	}
+	return (tmp);
 }

@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dground <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: dground <dground@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/04 15:44:27 by dground           #+#    #+#             */
-/*   Updated: 2021/10/04 15:44:29 by dground          ###   ########.fr       */
+/*   Created: 2021/10/05 13:04:17 by dground           #+#    #+#             */
+/*   Updated: 2021/10/06 21:36:08 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
