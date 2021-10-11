@@ -6,7 +6,7 @@
 /*   By: dground <dground@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 15:26:09 by dground           #+#    #+#             */
-/*   Updated: 2021/10/06 21:37:23 by dground          ###   ########.fr       */
+/*   Updated: 2021/10/11 17:20:52 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,21 @@
 
 size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 {
-	unsigned int	len;
-	unsigned int	slen;
+	size_t	slen;
+	size_t	i;
+	size_t	j;
 
-	len = 0;
 	slen = ft_strlen(src);
-	while (*dst && dstsize > 0)
+	i = 0;
+	j = 0;
+	while (dst[i] && i < dstsize)
+		i++;
+	while (src[j] && (i + j + 1) < dstsize)
 	{
-		dst++;
-		len++;
-		dstsize--;
+		dst[i + j] = src[j];
+		j++;
 	}
-	while (*src && dstsize-- > 1)
-		*dst++ = *src++;
-	if (dstsize == 1 || *src == 0)
-		*dst = '\0';
-	return (slen + len);
+	if (i != dstsize)
+		dst[i + j] = '\0';
+	return (i + slen);
 }

@@ -6,47 +6,51 @@
 /*   By: dground <dground@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 11:10:49 by dground           #+#    #+#             */
-/*   Updated: 2021/10/10 18:15:28 by dground          ###   ########.fr       */
+/*   Updated: 2021/10/11 16:18:42 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*ft_strcpy(char *dest, char *scr)
+static int	ft_nbrlen(int i)
 {
-	unsigned int	i;
-
-	i = 0;
-	while (scr[i] != '\0')
+	if (i < 0)
 	{
-		dest[i] = scr[i];
-		i++;
+		if (-i < 0)
+			return (ft_nbrlen(-(i / 10)) + 2);
+		else
+			return (ft_nbrlen(-i) + 1);
 	}
-	dest[i] = '\0';
-	return (dest);
+	else if (i > 9)
+		return (ft_nbrlen(i / 10) + 1);
+	else
+		return (1);
 }
 
 char	*ft_itoa(int n)
 {
 	char	*str;
+	int		length;
+	int		sign;
 
-	str = (char *)malloc(sizeof(char) * 2);
+	length = ft_nbrlen(n);
+	str = (char *)malloc(sizeof(char) * (length + 1));
 	if (!str)
 		return (NULL);
-	if (n == -2147483648)
-		return (ft_strcpy(str, "-2147483648"));
-	if (n < 0)
+	str[length] = '\0';
+	sign = (n < 0);
+	if (sign)
 	{
 		str[0] = '-';
-		str[1] = '\0';
-		str = ft_strjoin(str, ft_itoa(-n));
+		str[length - 1] = -(n % 10) + '0';
+		n = -(n / 10);
+		length--;
 	}
-	else if (n >= 10)
-		str = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
-	else if (n >= 0 && n < 10)
+	while (length > sign)
 	{
-		str[0] = n + '0';
-		str[1] = '\0';
+		str[length - 1] = (n % 10) + '0';
+		n = n / 10;
+		length--;
 	}
 	return (str);
 }
