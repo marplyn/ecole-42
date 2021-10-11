@@ -6,7 +6,7 @@
 /*   By: dground <dground@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 20:50:25 by dground           #+#    #+#             */
-/*   Updated: 2021/10/07 16:27:19 by dground          ###   ########.fr       */
+/*   Updated: 2021/10/11 20:24:46 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ size_t	ft_strlcpy(char *dst, char *src, size_t dstsize)
 	size_t	i;
 	size_t	len;
 
-	if (!dst)
-		return (0);
 	len = 0;
 	while (src[len] != '\0')
 		len++;
