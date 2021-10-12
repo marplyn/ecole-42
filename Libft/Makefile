@@ -1,4 +1,5 @@
 NAME = libft.a
+HEADER = libft.h
 CC = gcc
 SRCS = ft_atoi.c \
 		ft_bzero.c \
@@ -36,13 +37,13 @@ SRCS = ft_atoi.c \
 		ft_toupper.c
 
 OBJS = $(SRCS:.c=.o)
-FLAGS = -Wall -Wextra -Werror 
+FLAGS = -Wall -Wextra -Werror -I.$(HEADER)
 AR = ar -rcs
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	$(AR) $(NAME) $(OBJS)
+$(NAME): $(OBJS) $(HEADER)
+	$(AR) $(NAME) $(OBJS) $(HEADER)
 
 %.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@
