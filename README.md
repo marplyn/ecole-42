@@ -1,5 +1,5 @@
 ## about
-this repository contains [42cirsus](https://42.fr/en/homepage/) projects 
+this repository contains [42cursus](https://42.fr/en/homepage/) projects 
 
 ## results (moulinette evaluation 🤖)
 ### Libft
