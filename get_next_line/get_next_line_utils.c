@@ -6,17 +6,19 @@
 /*   By: dground <dground@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 15:54:59 by dground           #+#    #+#             */
-/*   Updated: 2021/10/17 12:31:18 by dground          ###   ########.fr       */
+/*   Updated: 2021/10/19 13:17:57 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-size_t	ft_strlen(const char *str)
+size_t	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
+	if (!str)
+		return (0);
 	while (str[i] != '\0')
 	{
 		i++;
@@ -24,65 +26,102 @@ size_t	ft_strlen(const char *str)
 	return (i);
 }
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strchr(char *s, int c)
 {
-	while (*s && *s != '\0')
+	if (!s)
+		return (0);
+	if ((char)c == '\0')
+		return ((char *)s);
+	while (*s != '\0')
 	{
 		if (*s == (char)c)
 			return ((char *)s);
 		s++;
 	}
-	if ((char)c == '\0')
-		return ((char *)s);
-	return (NULL);
+	return (0);
 }
 
-char	*ft_strcat(char *dest, const char *src)
+char	*ft_strcpy(char *str, char *leftover)
+{
+	int	i;
+
+	i = 0;
+	while (leftover[i] != '\0')
+	{
+		str[i] = leftover[i];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
+}
+
+char	*ft_strcat(char *str, char *buff)
 {
 	int	i;
 	int	j;
 
 	i = 0;
 	j = 0;
-	while (dest[i] != '\0')
+	while (str[i] != '\0')
 	{
 		i++;
 	}
-	while (src[j] != '\0')
+	while (buff[j] != '\0')
 	{
-		dest[i + j] = src[j];
+		str[i + j] = buff[j];
 		j++;
 	}
-	dest[i + j] = '\0';
-	return (dest);
+	str[i + j] = '\0';
+	return (str);
 }
 
-char	*ft_strcpy(char *dest, const char *scr)
-{
-	int	i;
-
-	i = 0;
-	while (scr[i] != '\0')
-	{
-		dest[i] = scr[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
-}
-
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char *leftover, char *buff)
 {
 	char	*str;
-	int		length;
+	size_t	length;
 
-	if (s1 == NULL || s2 == NULL)
+	if (!leftover)
+	{
+		leftover = (char *)malloc(sizeof(char) * 1);
+		leftover[0] = '\0';
+	}
+	if (!leftover || !buff)
 		return (NULL);
-	length = ft_strlen(s1) + ft_strlen(s2) + 1;
+	length = ft_strlen(leftover) + ft_strlen(buff) + 1;
 	str = (char *)malloc(sizeof(char) * length);
 	if (str == NULL)
 		return (NULL);
-	ft_strcpy(str, s1);
-	ft_strcat(str, s2);
+	if (leftover)
+		ft_strcpy(str, leftover);
+	ft_strcat(str, buff);
+	free(leftover);
 	return (str);
 }
+
+/*char	*ft_strjoin(char *leftover, char *buff)
+{
+	char	*str;
+	size_t	i;
+	size_t	j;	
+
+	i = -1;
+	j = 0;
+	if (!leftover)
+	{
+		leftover = (char *)malloc(sizeof(char) * 1);
+		leftover[0] = '\0';
+	}
+	if (!leftover || !buff)
+		return (NULL);
+	str = (char *)malloc(ft_strlen(leftover) + ft_strlen(buff) + 1);
+	if (!str)
+		return (NULL);
+	if (leftover)
+		while (leftover[++i] != '\0')
+			str[i] = leftover[i];
+	while (buff[j] != '\0')
+		str[i++] = buff[j++];
+	str[ft_strlen(leftover) + ft_strlen(buff)] = '\0';
+	free(leftover);
+	return (str);
+}*/

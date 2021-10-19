@@ -6,7 +6,7 @@
 /*   By: dground <dground@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 20:04:59 by dground           #+#    #+#             */
-/*   Updated: 2021/10/17 14:53:05 by dground          ###   ########.fr       */
+/*   Updated: 2021/10/19 12:40:52 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_read_before_newline(int fd, char *leftover)
 	if (!buff)
 		return (NULL);
 	read_bytes = 1;
-	while (!(ft_strchr(leftover, '\n')) && read_bytes != 0)
+	while (!ft_strchr(leftover, '\n') && read_bytes != 0)
 	{
 		read_bytes = read(fd, buff, BUFFER_SIZE);
 		if (read_bytes == -1)
@@ -64,9 +64,36 @@ char	*ft_line_from_leftover(char *leftover)
 	return (line);
 }
 
+char	*ft_trim_leftover(char *leftover)
+{
+	int		i;
+	int		j;
+	char	*new_leftover;
+
+	i = 0;
+	while (leftover[i] && leftover[i] != '\n')
+		i++;
+	if (!leftover[i])
+	{
+		free(leftover);
+		return (NULL);
+	}
+	new_leftover = (char *)malloc(sizeof(char) * (ft_strlen(leftover) - i + 1));
+	if (!new_leftover)
+		return (NULL);
+	i++;
+	j = 0;
+	while (leftover[i])
+		new_leftover[j++] = leftover[i++];
+	new_leftover[j] = '\0';
+	free(leftover);
+	return (new_leftover);
+}
+
 char	*get_next_line(int fd)
 {
 	static char	*leftover;
+	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
@@ -74,5 +101,6 @@ char	*get_next_line(int fd)
 	if (!leftover)
 		return (NULL);
 	line = ft_line_from_leftover(leftover);
+	leftover = ft_trim_leftover(leftover);
 	return (line);
 }
