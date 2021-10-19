@@ -15,7 +15,7 @@
 char	*ft_read_before_newline(int fd, char *leftover)
 {
 	char	*buff;
-	int		read_bytes;
+	size_t	read_bytes;
 
 	buff = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));
 	if (!buff)
