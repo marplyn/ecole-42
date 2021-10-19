@@ -1,5 +1,6 @@
 .DS_Store
-a.out
-test.c
+*.out
+*.out.dSYM
 *.o
 *.a
+.vscode/
