@@ -1,6 +1,9 @@
 ## about
 this repository contains [42cursus](https://42.fr/en/homepage/) projects 
 
+## subjects
+[eng pdfs](/subjects)
+
 ## results (moulinette evaluation 🤖)
 ### Libft
 ```trace
