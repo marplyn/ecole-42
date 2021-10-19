@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dground <dground@student.42.fr>            +#+  +:+       +#+        */
+/*   By: dground <dground@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 15:54:59 by dground           #+#    #+#             */
-/*   Updated: 2021/10/19 13:17:57 by dground          ###   ########.fr       */
+/*   Updated: 2021/10/19 13:56:08 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,31 +97,3 @@ char	*ft_strjoin(char *leftover, char *buff)
 	free(leftover);
 	return (str);
 }
-
-/*char	*ft_strjoin(char *leftover, char *buff)
-{
-	char	*str;
-	size_t	i;
-	size_t	j;	
-
-	i = -1;
-	j = 0;
-	if (!leftover)
-	{
-		leftover = (char *)malloc(sizeof(char) * 1);
-		leftover[0] = '\0';
-	}
-	if (!leftover || !buff)
-		return (NULL);
-	str = (char *)malloc(ft_strlen(leftover) + ft_strlen(buff) + 1);
-	if (!str)
-		return (NULL);
-	if (leftover)
-		while (leftover[++i] != '\0')
-			str[i] = leftover[i];
-	while (buff[j] != '\0')
-		str[i++] = buff[j++];
-	str[ft_strlen(leftover) + ft_strlen(buff)] = '\0';
-	free(leftover);
-	return (str);
-}*/
