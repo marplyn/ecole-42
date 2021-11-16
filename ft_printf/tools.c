@@ -6,30 +6,15 @@
 /*   By: dground <dground@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 19:47:00 by dground           #+#    #+#             */
-/*   Updated: 2021/11/02 20:57:10 by dground          ###   ########.fr       */
+/*   Updated: 2021/11/16 22:03:36 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putchar(char c)
+int	ft_putchar(char c, int *length)
 {
 	write(1, &c, 1);
-	return (1);
-}
-
-int	ft_isdigit(int c)
-{
-	return (c >= '0' && c <= '9');
-}
-
-int	is_type(int c)
-{
-	return ((c == 'c') || (c == 's') || (c == 'p') || (c == 'd') || (c == 'i')
-		|| (c == 'u') || (c == 'x') || (c == 'X') || (c == '%'));
-}
-
-int	is_symbol(int c)
-{
-	return ((c == '-') || (c == '0') || (c == '.') || (c == '*') || (c == ' '));
+	(*length)++;
+	return (*length);
 }

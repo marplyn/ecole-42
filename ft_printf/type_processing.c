@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   type_processing.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dground <dground@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/31 16:37:18 by dground           #+#    #+#             */
-/*   Updated: 2021/11/16 22:38:17 by dground          ###   ########.fr       */
+/*   Created: 2021/11/16 20:04:36 by dground           #+#    #+#             */
+/*   Updated: 2021/11/16 22:14:01 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <stdarg.h>
-# include <unistd.h>
+void	c_type(int *length, va_list arguments)
+{
+	char	c;
 
-int		ft_printf(const char *format, ...);
-int		parse_input(const char *str, va_list arguments, int length);
-void	parse_conversions(char *str, int *length, va_list arguments);
-void	c_type(int *length, va_list arguments);
-void	s_type(int *length, va_list arguments);
-int		ft_putchar(char c, int *length);
+	c = va_arg(arguments, int);
+	ft_putchar(c, length);
+}
 
-#endif
+void	s_type(int *length, va_list arguments)
+{
+	char	*s;
+
+	s = va_arg(arguments, char *);
+	if (!*s)
+		s = "(NULL)";
+	while (*s)
+		ft_putchar(*s++, length);
+}
