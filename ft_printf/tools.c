@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   tools.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dground <dground@student.21-school.ru>     +#+  +:+       +#+        */
+/*   By: dground <dground@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 19:47:00 by dground           #+#    #+#             */
-/*   Updated: 2021/11/24 17:18:29 by dground          ###   ########.fr       */
+/*   Updated: 2021/11/24 19:22:55 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ void	ft_putuns(unsigned int nb, int *length)
 	}
 }
 
-void	ft_puthex(unsigned int nb, int *length, char *str)
+void	ft_puthex(unsigned long long nb, int *length, char *str)
 {
 	if (nb >= 16)
 	{

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   type_processing_hex.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dground <dground@student.21-school.ru>     +#+  +:+       +#+        */
+/*   By: dground <dground@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 15:59:17 by dground           #+#    #+#             */
-/*   Updated: 2021/11/24 17:23:29 by dground          ###   ########.fr       */
+/*   Updated: 2021/11/24 19:22:39 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ void	x_type(va_list arguments, int *length, char *str)
 
 void	p_type(va_list arguments, int *length, char *str)
 {
-	unsigned int	adr;
+	unsigned long	adr;
 
-	adr = va_arg(arguments, unsigned int);
+	adr = va_arg(arguments, unsigned long long);
 	ft_putchar('0', length);
 	ft_putchar('x', length);
 	ft_puthex(adr, length, str);

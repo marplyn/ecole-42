@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   type_processing.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dground <dground@student.21-school.ru>     +#+  +:+       +#+        */
+/*   By: dground <dground@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 20:04:36 by dground           #+#    #+#             */
-/*   Updated: 2021/11/24 17:24:25 by dground          ###   ########.fr       */
+/*   Updated: 2021/11/24 19:32:35 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ void	s_type(va_list arguments, int *length)
 	char	*s;
 
 	s = va_arg(arguments, char *);
-	if (!*s)
-		s = "(NULL)";
+	if (!s)
+		s = "(null)";
 	while (*s)
 		ft_putchar(*s++, length);
 }
