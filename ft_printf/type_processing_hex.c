@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   type_processing_hex.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dground <dground@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/31 16:37:13 by dground           #+#    #+#             */
-/*   Updated: 2021/11/24 17:19:08 by dground          ###   ########.fr       */
+/*   Created: 2021/11/24 15:59:17 by dground           #+#    #+#             */
+/*   Updated: 2021/11/24 17:23:29 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf(const char *format, ...)
+void	x_type(va_list arguments, int *length, char *str)
 {
-	int		length;
-	va_list	agruments;
+	unsigned int	nb;
 
-	length = 0;
-	va_start(agruments, format);
-	length = parse_input(format, agruments, length);
-	va_end(agruments);
-	return (length);
+	nb = va_arg(arguments, unsigned int);
+	ft_puthex(nb, length, str);
+}
+
+void	p_type(va_list arguments, int *length, char *str)
+{
+	unsigned int	adr;
+
+	adr = va_arg(arguments, unsigned int);
+	ft_putchar('0', length);
+	ft_putchar('x', length);
+	ft_puthex(adr, length, str);
 }

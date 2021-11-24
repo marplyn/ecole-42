@@ -6,13 +6,13 @@
 /*   By: dground <dground@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 20:04:36 by dground           #+#    #+#             */
-/*   Updated: 2021/11/16 22:14:01 by dground          ###   ########.fr       */
+/*   Updated: 2021/11/24 17:24:25 by dground          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	c_type(int *length, va_list arguments)
+void	c_type(va_list arguments, int *length)
 {
 	char	c;
 
@@ -20,7 +20,7 @@ void	c_type(int *length, va_list arguments)
 	ft_putchar(c, length);
 }
 
-void	s_type(int *length, va_list arguments)
+void	s_type(va_list arguments, int *length)
 {
 	char	*s;
 
@@ -29,4 +29,20 @@ void	s_type(int *length, va_list arguments)
 		s = "(NULL)";
 	while (*s)
 		ft_putchar(*s++, length);
+}
+
+void	d_i_type(va_list arguments, int *length)
+{
+	int	nb;
+
+	nb = va_arg(arguments, int);
+	ft_putnbr(nb, length);
+}
+
+void	u_type(va_list arguments, int *length)
+{
+	unsigned int	nb;
+
+	nb = va_arg(arguments, unsigned int);
+	ft_putuns(nb, length);
 }
