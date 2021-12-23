@@ -22,3 +22,6 @@ basic_tests: GNL OK | bonus_tests: GNL KO
 test_spdxiucpercent: 8/8 correct functions | bonus_one: KO (Does not compile) | bonus_two: KO (Does not compile)
 ```
 ✅ success 100/100
+
+### Born2beRoot
+✅ success 100/100
