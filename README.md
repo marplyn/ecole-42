@@ -1,13 +1,13 @@
 ![](/documentation/header.png)
 ## <code>about</code>
-this repository contains 42cursus projects at [42] programming school (https://42.fr/en/homepage/) ([21 School](https://21-school.ru) in Russia)
+this repository contains 42cursus projects at [42](https://42.fr/en/homepage/) programming school ([21 School](https://21-school.ru) in Russia)
 
 ---
 
 ## <code>first step: [picsine](https://github.com/marplyn/piscine-42)</code>
 > Rather than offering a straight computer initiation, the Piscine at 42 lets you start the curriculum with intensive training in C, the first language you have to use during the training course. For one month, the Piscine at 42 lets you tackle the teaching methods of the school: peer-to-peer learning, group work, peer-evaluation and project pedagogy.
 
-see all completed projects and subjects of the piscine [here](https://github.com/marplyn/piscine-42).
+see all completed projects and subjects of the piscine [here](https://github.com/marplyn/piscine-42)
 
 ---
 
