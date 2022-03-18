@@ -13,7 +13,7 @@ see all completed projects and subjects of the piscine [here](https://github.com
 
 ## <code>documentation</code>
 * [subjects](/documentation/subjects) of the cursus
-* the [Norm](/documentation/en_norm.pdf): describes the applicable programming standard at 42 to follow when writing code (see the source code [here](https://github.com/42School/norminette))
+* the [Norm](/documentation/en_norm.pdf): describes the applicable programming standard at 42 to follow when writing code (see the source code of the Normenette client [here](https://github.com/42School/norminette))
 * holy graph: the map of the cursus
 
 ![](/documentation/holygraph.png)
