@@ -46,7 +46,7 @@ test_spdxiucpercent: 8/8 correct functions | bonus_one: KO (Does not compile) | 
 ✅ success 100/100
 
 ### [Born2beRoot](/Born2beRoot)
-> This is a System Administration related exercise.
+> This project aims to introduce you to the wonderful world of virtualization.
 
 ✅ success 100/100
 
@@ -57,6 +57,11 @@ test_spdxiucpercent: 8/8 correct functions | bonus_one: KO (Does not compile) | 
 ✅ success 102/100
 
 ### [pipex](/pipex)
-> This project will let you discover in detail a UNIX mechanism that you already know by using it in your program.
+> This project aims to make you understand a bit deeper two concepts that you already know: the redirections and the pipes. It is an introduction project.
+
+✅ success 125/100
+
+### [so_long](/so_long)
+> This project is a very small 2D game. Its purpose is to make you work with textures, sprites, and some other very basic gameplay elements.
 
 ✅ success 125/100
