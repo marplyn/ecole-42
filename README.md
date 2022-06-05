@@ -65,3 +65,8 @@ test_spdxiucpercent: 8/8 correct functions | bonus_one: KO (Does not compile) | 
 > This project is a very small 2D game. Its purpose is to make you work with textures, sprites, and some other very basic gameplay elements.
 
 ✅ success 125/100
+
+### [Philosophers](/Philosophers)
+> In this project, you will learn the basics of threading a process. You will see how to create threads and you will discover mutexes.
+
+✅ success 125/100
