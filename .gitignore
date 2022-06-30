@@ -4,4 +4,3 @@
 *.o
 *.a
 .vscode/
-main.c
