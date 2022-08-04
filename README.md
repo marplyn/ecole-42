@@ -1,6 +1,7 @@
 ![](/documentation/header.png)
+
 ## <code>about</code>
-this repository contains 42cursus projects at [42](https://42.fr/en/homepage/) programming school ([21 School](https://21-school.ru) in Russia)
+this repository contains my completed 42cursus projects at [42](https://42.fr/en/homepage/) programming school ([21 School](https://21-school.ru) in Russia).
 
 ---
 
@@ -20,7 +21,7 @@ see all completed projects and subjects of the piscine [here](https://github.com
 
 ---
 
-## <code>results</code>
+## <code>results of completed projects</code>
 ### [Libft](/Libft)
 #### Your very first own library
 > This project aims to code a C library regrouping usual functions that you’ll be allowed to use in all your other projects.
@@ -73,7 +74,7 @@ test_spdxiucpercent: 8/8 correct functions | bonus_one: KO (Does not compile) | 
 
 ✅ success 125/100
 
-### [miniRT](/miniRT) (with @llirrikk)
+### [miniRT](/miniRT) (with [@llirrikk](https://github.com/llirrikk))
 > This project is an introduction to the beautiful world of Raytracing. Once completed you will be able to render simple Computer-Generated-Images and you will never be afraid of implementing mathematical formulas again.
 
 ✅ success 103/100
