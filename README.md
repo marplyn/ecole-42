@@ -62,11 +62,18 @@ test_spdxiucpercent: 8/8 correct functions | bonus_one: KO (Does not compile) | 
 ✅ success 125/100
 
 ### [so_long](/so_long)
+#### And thanks for all the fish!
 > This project is a very small 2D game. Its purpose is to make you work with textures, sprites, and some other very basic gameplay elements.
 
 ✅ success 125/100
 
 ### [Philosophers](/Philosophers)
-> In this project, you will learn the basics of threading a process. You will see how to create threads and you will discover mutexes.
+#### I never thought philosophy would be so deadly
+> Eat, Sleep, Spaghetti, repeat. This project is about learning how threads work by precisely timing a group of philosophers on when to pick up forks and eat spaghetti without dying from hunger.
 
 ✅ success 125/100
+
+### [miniRT](/miniRT) (with @llirrikk)
+> This project is an introduction to the beautiful world of Raytracing. Once completed you will be able to render simple Computer-Generated-Images and you will never be afraid of implementing mathematical formulas again.
+
+✅ success 103/100
