@@ -24,43 +24,25 @@ See all completed projects and subjects of the piscine [here](https://github.com
 ## <code>completed projects</code>
 
 ### [CPP Module](/CPP%20Module/)
-These modules are the introduction to C++ and Object-Oriented Programming.
+> These modules are the introduction to C++ and Object-Oriented Programming.
 
-#### [00](/CPP%20Module/CPP%20Module%2000/)
-*[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2000.pdf)*
-> Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and some other basic stuff.
+> **[00](/CPP%20Module/CPP%20Module%2000/)**: Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and some other basic stuff. *[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2000.pdf)*
 
-#### [01](/CPP%20Module/CPP%20Module%2001/)
-*[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2001.pdf)*
-> Memory allocation, pointers to members, references, switch statement.
+> **[01](/CPP%20Module/CPP%20Module%2001/)**: Memory allocation, pointers to members, references, switch statement. *[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2001.pdf)*
 
-#### [02](/CPP%20Module/CPP%20Module%2002/)
-*[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2002.pdf)*
-> Ad-hoc polymorphism, operator overloading and Orthodox Canonical class form.
+> **[02](/CPP%20Module/CPP%20Module%2002/)**: Ad-hoc polymorphism, operator overloading and Orthodox Canonical class form. *[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2002.pdf)*
 
-#### [03](/CPP%20Module/CPP%20Module%2003/)
-*[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2003.pdf)*
-> Inheritance.
+> **[03](/CPP%20Module/CPP%20Module%2003/)**: Inheritance. *[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2003.pdf)*
 
-#### [04](/CPP%20Module/CPP%20Module%2004/)
-*[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2004.pdf)*
-> Subtype polymorphism, abstract classes, interfaces.
+> **[04](/CPP%20Module/CPP%20Module%2004/)**: Subtype polymorphism, abstract classes, interfaces. *[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2004.pdf)*
 
-#### [05](/CPP%20Module/CPP%20Module%2005/)
-*[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2005.pdf)*
-> Repetition and Exceptions.
+> **[05](/CPP%20Module/CPP%20Module%2005/)**: Repetition and Exceptions. *[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2005.pdf)*
 
-#### [06](/CPP%20Module/CPP%20Module%2006/)
-*[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2006.pdf)*
-> C++ casts.
+> **[06](/CPP%20Module/CPP%20Module%2006/)**: C++ casts. *[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2006.pdf)*
 
-#### [07](/CPP%20Module/CPP%20Module%2007/)
-*[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2007.pdf)*
-> C++ templates.
+> **[07](/CPP%20Module/CPP%20Module%2007/)**: C++ templates. *[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2007.pdf)*
 
-#### [08](/CPP%20Module/CPP%20Module%2008/)
-*[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2008.pdf)*
-> Templated containers, iterators, algorithms.
+> **[08](/CPP%20Module/CPP%20Module%2008/)**: Templated containers, iterators, algorithms. *[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2008.pdf)*
 
 ---
 
