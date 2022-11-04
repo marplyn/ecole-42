@@ -62,46 +62,55 @@ These modules are the introduction to C++ and Object-Oriented Programming.
 *[subject](/documentation/subjects/CPP%20Module/CPP%20Module%2008.pdf)*
 > Templated containers, iterators, algorithms.
 
+---
 
 ### [miniRT](/miniRT) (with [@llirrikk](https://github.com/llirrikk))
 *[subject](/documentation/subjects/miniRT.pdf)*
 > This project is an introduction to the beautiful world of Raytracing. Once completed you will be able to render simple Computer-Generated-Images and you will never be afraid of implementing mathematical formulas again.
 
+---
 
 ### [Philosophers](/Philosophers)
 *[subject](/documentation/subjects/Philosophers.pdf)*
 > Eat, Sleep, Spaghetti, repeat. This project is about learning how threads work by precisely timing a group of philosophers on when to pick up forks and eat spaghetti without dying from hunger.
 
+---
 
 ### [so_long](/so_long)
 *[subject](/documentation/subjects/so_long.pdf)*
 > This project is a very small 2D game. Its purpose is to make you work with textures, sprites, and some other very basic gameplay elements.
 
+---
 
 ### [pipex](/pipex)
 *[subject](/documentation/subjects/pipex.pdf)*
 > This project aims to make you understand a bit deeper two concepts that you already know: the redirections and the pipes. It is an introduction project.
 
+---
 
 ### [push_swap](/push_swap)
 *[subject](/documentation/subjects/push_swap.pdf)*
 > This project will make you sort data on a stack, with a limited set of instructions, using the lowest possible number of actions. To succeed you’ll have to manipulate various types of algorithms and choose the one (of many) most appropriate solution for an optimized data sorting.
 
+---
 
 ### [Born2beRoot](/Born2beRoot)
 *[subject](/documentation/subjects/Born2beRoot.pdf)*
 > This project aims to introduce you to the wonderful world of virtualization.
 
+---
 
 ### [ft_printf](/ft_printf)
 *[subject](/documentation/subjects/ft_printf.pdf)*
 > This project is pretty straight forward. You will recode printf. Hopefully you will be able to reuse it in future projects without the fear of being flagged as a cheater. You will mainly learn how to use variadic arguments.
 
+---
 
 ### [get_next_line](/get_next_line)
 *[subject](/documentation/subjects/get_next_line.pdf)*
 > The aim of this project is to make you code a function that returns a line, read from a file descriptor.
 
+---
 
 ### [Libft](/Libft)
 *[subject](/documentation/subjects/Libft.pdf)*
